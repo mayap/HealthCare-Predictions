@@ -15,24 +15,24 @@ Additonal information about the system:
 
 Technology Stack:
 - Front-end
-  o	HTML
-  o	CSS
-  o	JavaScript
-  o	jQuery
+   - HTML
+   - CSS
+   - JavaScript
+   - jQuery
 - Back-end
-  o	Python
-  o	Flask framework
-    	Request – reads request data from the client-side
-    	Json – work with json objects
-  o	Flask_cors – work with CORS requests
+  -	Python
+  -	Flask framework
+    - Request – reads request data from the client-side
+    - Json – work with json objects
+  -	Flask_cors – work with CORS requests
 -	Classifier
-  o	scikit-learn
-    	tree - for the classifier
-  o	numpy – work with arrays
-  o	pandas – read .csv files
-  o	collections – work with list in Python
-  o	Graphviz – to generate the tree in .dot file
-  o	pydotplus – to visualize the .dot file with the tree
+  -	scikit-learn
+    - tree - for the classifier
+  -	numpy – work with arrays
+  -	pandas – read .csv files
+  -	collections – work with list in Python
+  -	Graphviz – to generate the tree in .dot file
+  -	pydotplus – to visualize the .dot file with the tree
   
   
   Generated image of the tree:
