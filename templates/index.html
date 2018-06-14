@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>HealthCare Predictions</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}" type="text/css">
+</head>
+<body>
+    <div class="classifier">
+        <div class="classifier-wrapper">
+            <h1 class="classifier-title">HealthCare Predictions</h1>
+            <h3 class="classifier-title">Lower Back Pain Symptoms</h3>
+            <form class="classifier-form" method="post">
+                <label for="classifier-form-input">Add some physical data separated with a comma:</label>
+                <p class="validate-label"></p>
+                <textarea name="data"
+                          id="classifier-form-input"
+                          cols="100"
+                          rows="9"
+                          placeholder="Add 12 numbers (integer or double), separated by a comma"></textarea>
+                <button type="submit" class="predict-button" onclick="makePrediction(); return false;">Predict</button>
+            </form>
+        </div>
+        <div class="classifier-image-holder">
+            <p>
+                <span>Result:</span>
+                <span class="classifier-result-text"></span>
+            </p>
+            <div class="classifier-image-wrapper">
+                <p>Do you wonder how this result came out? See the image below:</p>
+                <a href="" target="_blank" class="classifier-image-link">
+                    Decision Tree Classifier
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js"
+            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+            crossorigin="anonymous"></script>
+    <script src="{{ url_for('static', filename='js/app.js') }}"></script>
+</body>
+</html>
